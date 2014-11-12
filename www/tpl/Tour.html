@@ -1,0 +1,36 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">HISTORY<b>MIAMI</b> - {{this.category}}
+			</a>
+		</div>
+    
+	</div>
+</nav>
+		
+<div class="span12">
+		<img src="img/Tours{{this.categoryId}}.JPG" width="100%"/>
+</div>
+
+ <a  class= "btn btn-primary btn-block btn-lg contact" href="#tour/{{this.id}}"  onclick="var ref = window.open('{{this.registrationLink}}', '_system');">Book Now!</a>	
+
+ 
+ <div class="panel panel-primary">
+	<div class="panel-body">
+		<h2>{{this.name}}</h2>
+		<p>{{this.date}}</p>
+		<p align="center">
+		{{this.description}}
+		</p>
+		<p><b>Members: $</b>{{this.priceMember}}</p>
+		<p><b>Non-Members: $</b>{{this.priceNonMember}}</p>
+		<p><b>Children 12 and under: $</b>{{this.priceChild}}</p>
+		
+		
+	</div>
+</div>
+<br>
+
+
+

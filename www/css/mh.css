@@ -1,0 +1,24 @@
+body { padding-top: 50px; }
+
+a.contact { 
+	text-decoration: none;
+	color: white;
+}
+
+a.nounderline{
+	text-decoration: none;
+
+}
+
+.hideOverflow
+{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+a.divBlock
+{
+	display:block;
+}
+

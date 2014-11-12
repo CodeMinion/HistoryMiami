@@ -1,0 +1,43 @@
+{{#.}}
+<li class="list-group-item">
+	
+	<div class="row">
+	
+	
+		<div class="col-xs-3 col-sm-3">
+			<a href="#albums/{{this.albumId}}" class="thumbnail nounderline action_{{this.id}}" onclick="$('#myModal_'+{{this.id}}).modal('show')">
+				<img src="{{this.image}}" alt="{{this.name}}"/>
+			</a>
+		</div>
+		
+		<div class="col-xs-7 col-sm-7">
+			<a class="nounderline action_{{this.id}}" href="#albums/{{this.albumId}}" onclick="$('#myModal_'+{{this.id}}).modal('show')">
+			<h3>{{this.text}} </h3>
+			</a>
+		</div>
+		
+		
+	
+	</div>
+	</a>
+<!-- Modal -->
+<div class="modal fade" id="myModal_{{this.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body" align="center">
+        <img src="{{this.image}}" alt="{{this.name}}" class="img-thumbnail"/>
+      </div>
+  </div>
+
+      <div class="panel panel-primary">
+		<div class="panel-heading">
+		  <p align="center">
+			{{this.text}}
+			<p>
+      </div>
+	  </div>	
+</div>
+	
+	
+</li>
+{{/.}}

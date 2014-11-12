@@ -1,0 +1,35 @@
+{{#.}}
+<li class="list-group-item">
+	
+	<div class="row">
+	
+	
+		<div class="col-xs-3 col-sm-3">
+			<a href="#tours/{{this.id}}" class="thumbnail nounderline">
+				<img src="img/{{this.smallPic}}" alt="{{this.name}}"/>
+			</a>
+		</div>
+		
+		<div class="col-xs-7 col-sm-7">
+			<a class="nounderline" href="#tours/{{this.id}}" >
+			<h2>{{this.name}} </h2><br>
+				<p class="hideOverflow">{{this.description}}</p>
+			</a>
+		</div>
+		
+		<div class="col-xs-2 col-sm-2">
+			<a  href="#tours/{{this.id}}" >
+			<h2>
+			<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+			</h2>
+			</a>
+		</div>
+	
+	</div>
+	</a>
+		
+	
+	
+	
+</li>
+{{/.}}

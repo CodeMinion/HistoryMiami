@@ -1,0 +1,65 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">HISTORY<b>MIAMI</b> - {{this.name}}
+			</a>
+		</div>
+    
+	</div>
+</nav>
+		
+<div class="span12">
+		<img src="{{this.imageUrl}}" width="100%"/>
+</div>
+<!--
+<audio class="btn-block" src="audio/{{this.audioUrl}}" controls></audio>
+-->			
+<div class="panel panel-primary">
+	  <div class="panel-body">
+	  <h2>{{this.sectionName}}</h2>
+	  <p align="center">
+	  {{this.description}}
+	  </p>
+	  </div>
+</div>
+
+	<div>	  
+	  <a  class="section_back nounderline" href="#exhibitSection/{{this.id}}_{{this.sectionNext}}" >
+			<h2>
+			<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+			</h2>
+	  </a>
+
+	  <a  class="section_forward nounderline" href="#exhibitSection/{{this.id}}_{{this.sectionPrev}}" >
+			<h2>
+			<span class="glyphicon glyphicon-chevron-left pull-left"></span>
+			</h2>
+	  </a>
+	</div>
+
+<div class="container">
+	<div class="row" align="center">
+		<div class="col-xs-2 col-sm-2" align="center">
+		<a  class= "nounderline contact" href="#exhibitSection/{{this.id}}_{{this.sectionNo}}"  onclick="var ref = window.open('http://www.facebook.com', '_system');"><img src="img/facebook_icon.png"/></a>	
+		</div>
+		
+		<div class="col-xs-2 col-sm-2"align="center">
+		<a  class= "nounderline contact" href="#exhibitSection/{{this.id}}_{{this.sectionNo}}"  onclick="var ref = window.open('http://www.twitter.com', '_system');"><img src="img/twitter_icon.png"/></a>	
+		</div>
+		
+		
+		<div class="col-xs-2 col-sm-2" align="center">
+		<a  class= "nounderline contact" href="#exhibitSection/{{this.id}}_{{this.sectionNo}}"  onclick="var ref = window.open('http://www.instagram.com', '_system');"><img src="img/instagram_icon.gif"/></a>	
+		</div>
+		
+		<div class="col-xs-2 col-sm-2" align="center">
+		<a  class= "nounderline contact" href="#exhibitSection/{{this.id}}_{{this.sectionNo}}"  onclick="var ref = window.open('http://www.pinterest.com', '_system');"><img src="img/pinterest_icon.gif"/></a>	
+		</div>
+		
+		<div class="col-xs-2 col-sm-2" align="center">
+		<a  class= "nounderline contact" href="#exhibitSection/{{this.id}}_{{this.sectionNo}}"  onclick="var ref = window.open('http://www.plus.google.com', '_system');"><img src="img/google_plus_icon.gif"/></a>	
+		</div>
+		
+	</div>
+</div>
